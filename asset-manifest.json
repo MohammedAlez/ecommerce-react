@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/ecommerce-react/static/css/main.9d526248.css",
-    "main.js": "/ecommerce-react/static/js/main.5a452edc.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/ecommerce-react/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/vr.png": "/ecommerce-react/static/media/vr.f32c4165160cfb0801a0.png",
-    "static/media/tv.png": "/ecommerce-react/static/media/tv.f64b3b1413073df38111.png",
-    "static/media/iphone.png": "/ecommerce-react/static/media/iphone.ce3d2ffad028e3fa07d2.png",
-    "static/media/pngwing.com.png": "/ecommerce-react/static/media/pngwing.com.ce3d2ffad028e3fa07d2.png",
-    "static/media/img3.png": "/ecommerce-react/static/media/img3.73ae7ae47fb3577301ba.png",
-    "static/media/2021-hero-image-2.jpg": "/ecommerce-react/static/media/2021-hero-image-2.d2863f1dabe83ad1149d.jpg",
-    "static/media/mac.png": "/ecommerce-react/static/media/mac.c854de2f2d99b25a6ddc.png",
-    "static/media/img1.png": "/ecommerce-react/static/media/img1.47adf55c294217000f7c.png",
-    "static/media/img2.png": "/ecommerce-react/static/media/img2.1a7e4d045b7149fec695.png",
-    "static/media/—Pngtree—special offer png_6960764.png": "/ecommerce-react/static/media/—Pngtree—special offer png_6960764.0bd8dbb1adedf16d526d.png",
-    "static/media/ps5.png": "/ecommerce-react/static/media/ps5.033f07efb15be6e99b55.png",
-    "static/media/ps5 pro.jpg": "/ecommerce-react/static/media/ps5 pro.4ee3942ad3cf0f5d750e.jpg",
-    "static/media/payment.png": "/ecommerce-react/static/media/payment.35966464e6d6ac8496aa.png",
-    "static/media/—Pngtree—new product in banner style_8366873.png": "/ecommerce-react/static/media/—Pngtree—new product in banner style_8366873.88ffc0a26a29fd08ca77.png",
-    "index.html": "/ecommerce-react/index.html",
-    "main.9d526248.css.map": "/ecommerce-react/static/css/main.9d526248.css.map",
-    "main.5a452edc.js.map": "/ecommerce-react/static/js/main.5a452edc.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/ecommerce-react/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/static/css/main.9d526248.css",
+    "main.js": "/static/js/main.d9553ee3.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/vr.png": "/static/media/vr.f32c4165160cfb0801a0.png",
+    "static/media/tv.png": "/static/media/tv.f64b3b1413073df38111.png",
+    "static/media/iphone.png": "/static/media/iphone.ce3d2ffad028e3fa07d2.png",
+    "static/media/pngwing.com.png": "/static/media/pngwing.com.ce3d2ffad028e3fa07d2.png",
+    "static/media/img3.png": "/static/media/img3.73ae7ae47fb3577301ba.png",
+    "static/media/2021-hero-image-2.jpg": "/static/media/2021-hero-image-2.d2863f1dabe83ad1149d.jpg",
+    "static/media/mac.png": "/static/media/mac.c854de2f2d99b25a6ddc.png",
+    "static/media/img1.png": "/static/media/img1.47adf55c294217000f7c.png",
+    "static/media/img2.png": "/static/media/img2.1a7e4d045b7149fec695.png",
+    "static/media/—Pngtree—special offer png_6960764.png": "/static/media/—Pngtree—special offer png_6960764.0bd8dbb1adedf16d526d.png",
+    "static/media/ps5.png": "/static/media/ps5.033f07efb15be6e99b55.png",
+    "static/media/ps5 pro.jpg": "/static/media/ps5 pro.4ee3942ad3cf0f5d750e.jpg",
+    "static/media/payment.png": "/static/media/payment.35966464e6d6ac8496aa.png",
+    "static/media/—Pngtree—new product in banner style_8366873.png": "/static/media/—Pngtree—new product in banner style_8366873.88ffc0a26a29fd08ca77.png",
+    "index.html": "/index.html",
+    "main.9d526248.css.map": "/static/css/main.9d526248.css.map",
+    "main.d9553ee3.js.map": "/static/js/main.d9553ee3.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d526248.css",
-    "static/js/main.5a452edc.js"
+    "static/js/main.d9553ee3.js"
   ]
 }
