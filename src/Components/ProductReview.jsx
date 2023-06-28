@@ -40,7 +40,7 @@ export const ProductReview = () => {
                         onClick={()=>setMainImage(data?.attributes?.image?.data?.attributes?.url)}
                         alt="" />
                     {data?.attributes?.images?.data?.map((i)=>(
-                        <img src={process.env.REACT_APP_UP_URL + i?.attributes?.url} 
+                        <img src={i?.attributes?.url} 
                         key={i?.id} 
                         className='cursor-pointer w-[80px] h-[80px]  object-contain' 
                         onClick={()=>setMainImage(i?.attributes?.url)}
