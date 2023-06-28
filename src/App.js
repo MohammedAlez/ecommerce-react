@@ -47,8 +47,8 @@ function App() {
       {/* <RouterProvider router={router} /> */}
       <BrowserRouter basename='/ecommerce-react'>
         <Routes>
-          <Route path='/ecommerce-react' element={<Main />}>
-            <Route exact path='/ecommerce-react' element={<Home />} />
+          <Route path='/' element={<Main />}>
+            <Route exact path='/' element={<Home />} />
             <Route path='/products' element={<Products />} />
             <Route path='/contact' element={<Contact />}/>
             <Route path='/discount' element={<Discount />} />
