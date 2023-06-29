@@ -107,7 +107,7 @@ export const Signup = () => {
                         <button
                         onClick={handleSubmit}
                         className='mt-4 rounded-xl w-full p-2 bg-blue-600 text-white font-bold hover:bg-blue-700' >Create Account</button>
-                        <Link to="https://strapi-demo-app-7v79.onrender.com/api/connect/google" className='block text-center mt-4 rounded-xl w-full p-2 text-blue-950 hover:text-white hover:bg-blue-950 transition duration-200  font-bold border ' >Sign up with Google</Link>
+                        // <Link to="https://strapi-demo-app-7v79.onrender.com/api/connect/google" className='block text-center mt-4 rounded-xl w-full p-2 text-blue-950 hover:text-white hover:bg-blue-950 transition duration-200  font-bold border ' >Sign up with Google</Link>
                         <Link to='/login' className='font-medium text-gray-500 text-sm mt-6 block text-center'>have an Account Sign in</Link>
                     </div>}
                     {loading && <div className=' flex justify-center items-center top-0 left-0 w-full h-[350px]'>

@@ -32,12 +32,12 @@ export const ProductReview = () => {
             <div className='flex items-center flex-col gap-4 flex-1'>
                 {/* mainImage */}
                 <div className='w-full'>
-                    <img src={mainImage} className=' w-full h-[400px] p-6 object-contain' alt="" />
+                    <img src={mainImage} className='rounded-lg w-full h-[400px] p-6 object-contain' alt="" />
                 </div>
                 {/* otherImages */}
                 <div className="flex gap-1 mx-3 overflow-x-auto">
                     <img src={data?.attributes?.image?.data?.attributes?.url}  
-                        className='cursor-pointer w-[80px] h-[80px]  object-cover' 
+                        className='cursor-pointer w-[80px] rounded-lg h-[80px]  object-cover' 
                         onClick={()=>setMainImage(data?.attributes?.image?.data?.attributes?.url)}
                         alt="" />
                     {data?.attributes?.images?.data?.map((i)=>(
