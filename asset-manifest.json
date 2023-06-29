@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecommerce-react/static/css/main.9d526248.css",
-    "main.js": "/ecommerce-react/static/js/main.cf036f11.js",
+    "main.css": "/ecommerce-react/static/css/main.c140a047.css",
+    "main.js": "/ecommerce-react/static/js/main.56dd5995.js",
     "static/js/787.c4e7f8f9.chunk.js": "/ecommerce-react/static/js/787.c4e7f8f9.chunk.js",
     "static/media/vr.png": "/ecommerce-react/static/media/vr.f32c4165160cfb0801a0.png",
     "static/media/tv.png": "/ecommerce-react/static/media/tv.f64b3b1413073df38111.png",
@@ -18,12 +18,12 @@
     "static/media/payment.png": "/ecommerce-react/static/media/payment.35966464e6d6ac8496aa.png",
     "static/media/—Pngtree—new product in banner style_8366873.png": "/ecommerce-react/static/media/—Pngtree—new product in banner style_8366873.88ffc0a26a29fd08ca77.png",
     "index.html": "/ecommerce-react/index.html",
-    "main.9d526248.css.map": "/ecommerce-react/static/css/main.9d526248.css.map",
-    "main.cf036f11.js.map": "/ecommerce-react/static/js/main.cf036f11.js.map",
+    "main.c140a047.css.map": "/ecommerce-react/static/css/main.c140a047.css.map",
+    "main.56dd5995.js.map": "/ecommerce-react/static/js/main.56dd5995.js.map",
     "787.c4e7f8f9.chunk.js.map": "/ecommerce-react/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d526248.css",
-    "static/js/main.cf036f11.js"
+    "static/css/main.c140a047.css",
+    "static/js/main.56dd5995.js"
   ]
 }
