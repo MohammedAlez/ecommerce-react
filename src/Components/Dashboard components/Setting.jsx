@@ -10,6 +10,7 @@ export const Setting = () => {
   const navigate = useNavigate();
   const [info,setInfo] = useState({telephone:user.telephone,address:user.address})
   const [isChanged,setIsChanged] = useState(false);
+  const [isPut,setIsPut] = useState(false);
   const updateUser=async()=>{
     try{
       const req = await makeRequest.get(`/users/${user.id}?populate=*`)
@@ -24,21 +25,27 @@ export const Setting = () => {
         progress: undefined,
         theme: "light",
         });
+        setIsPut(false)
       navigate('/my-account/')
     }catch{
       console.log('error')
+      setIsPut(false)
     }
   }
   const handleSave=async(e)=>{
       e.preventDefault();
       try{
+        setIsPut(true);
         await makeRequest.put(`/users/${user.id}`,{
             'address':`${info.address}`,
             'telephone': `${info.telephone}`
         })
+        
         updateUser();
+
       }catch{
         console.log('errror');
+        setIsPut(false);
       }
 
   }
@@ -79,13 +86,13 @@ export const Setting = () => {
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
           <label className='flex flex-col gap-1'>
             <span className='font-medium text-sm ml-1'>Address</span>
-            <input type='text' name='address' value={info.address || ''} onChange={handleChange}
+            <input  disabled={isPut} type='text' name='address' value={info.address || ''} onChange={handleChange}
               className='border p-1 px-2 rounded-md font-medium'
             />
           </label>
           <label className='flex flex-col gap-1'>
             <span className='font-medium text-sm ml-1'>Telephone</span>
-            <input type='tel' name='telephone' value={info.telephone || ''} onChange={handleChange}
+            <input disabled={isPut}  type='tel' name='telephone' value={info.telephone || ''} onChange={handleChange}
               className='border p-1 px-2 rounded-md font-medium'
             />
           </label>
@@ -98,7 +105,7 @@ export const Setting = () => {
           </label> */}
         </div>
         <div className="w-full text-right p-2 mt-3">
-          <button disabled={isChanged ? false : true}
+          <button disabled={(!isChanged || isPut)? true : false}
           className={`${isChanged ? ' bg-blue-600 text-white' : 'text-black bg-gray-200'} p-2 py-1 font-medium text-base rounded-md`}
           onClick={handleSave}
           >save</button>

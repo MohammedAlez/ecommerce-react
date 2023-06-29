@@ -10,7 +10,7 @@ export const ShoppingCart = () => {
     const {cartItems,user,dispatch} = useContextApi();
     const navigate = useNavigate()
     const [info,setInfo] = useState({telephone:user?.telephone,address:user?.address,name:user?.username})
-    
+    const [isPut,setIsPut] = useState(false);
     const totalPrice = cartItems.reduce((acc,current)=>{
         return acc + parseInt(current.quantity)*parseFloat(current.price);
     },0)
@@ -19,7 +19,7 @@ export const ShoppingCart = () => {
             ...prevInfo,
             [e.target.name]:e.target.value
         }))
-        console.log(info)
+        // console.log(info)
     }
     const handleOrderItems=async(orderId)=>{
         // cartItems.map(async(item)=>{
@@ -34,8 +34,10 @@ export const ShoppingCart = () => {
                 })
                 // console.log(req);
                 }
+                setIsPut(false);
                 dispatch({type:'reset'})
             }catch{
+                setIsPut(false);
                 console.log("post order items error")
             }
         // })
@@ -56,6 +58,7 @@ export const ShoppingCart = () => {
         }else{
             const resolveWithSomeData = new Promise(async(resolve,rejected) => {
                 try{
+                    setIsPut(true);
                     const order = await makeRequest.post('/orders',{
                         data:{
                             totalPrice,
@@ -68,6 +71,7 @@ export const ShoppingCart = () => {
                     navigate('/my-account/')
                     resolve('Your Order Placed Successfully')
                 }catch{
+                    setIsPut(false);
                     rejected('Some Thing Went Wrong')
                 }
             });
@@ -146,7 +150,7 @@ export const ShoppingCart = () => {
                             onChange={handleInfo} required
                             className='p-2 px-4 outline-none bg-gray-100 w-full rounded-lg font-medium border-2 border-transparent focus:border-blue-600'/>
                         </label>
-                        <button onClick={handleOrder} className='w-full mt-2 hover:bg-blue-700 text-sm bg-blue-600 font-bold py-2 px-4 text-white rounded-lg'>Place Order</button>
+                        <button disabled={isPut} onClick={handleOrder} className='w-full mt-2 hover:bg-blue-700 text-sm bg-blue-600 font-bold py-2 px-4 text-white rounded-lg'>Place Order</button>
                     </form>
                 </div>}
             </div>

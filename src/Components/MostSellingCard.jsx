@@ -11,7 +11,7 @@ export const MostSellingCard = ({item}) => {
         <div className='w-full h-[160px] relative'>
             {item?.attributes?.discount && <span className='absolute left-1 top-1 text-[12px] p-1 bg-red-600 text-white rounded-lg'>{item?.attributes?.discount}% OFF</span>}
             
-            <img className='pointer-events-none h-[150px] w-full object-contain' src={process.env.REACT_APP_UP_URL + item?.attributes?.image?.data?.attributes?.url} alt="" />
+            <img className='pointer-events-none h-[150px] w-full object-contain' src={item?.attributes?.image?.data?.attributes?.url} alt="" />
         </div>
         <div className='py-1'>
             <div className="font-medium text-[12px] text-gray-500">{item?.attributes?.category?.data?.attributes?.name}</div>
