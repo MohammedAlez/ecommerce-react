@@ -5,6 +5,7 @@ import img2 from '../images/mac.png'
 import img3 from '../images/iphone.png'
 import img4 from '../images/ps5.png'
 
+
 export const Categories = () => {
   return (
     <div className='xl:w-[1200px] mx-auto px-2 py-14'>
